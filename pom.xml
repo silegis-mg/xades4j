@@ -180,5 +180,19 @@
             </build>
         </profile>
     </profiles>
-    
+    <distributionManagement>
+        <repository>
+            <id>almgRelease</id>
+            <name>Repositório de releases da ALMG</name>
+            <url>http://compilador.almg.uucp:8081/nexus/content/repositories/releases</url>
+            <layout>default</layout>      
+        </repository>
+        <snapshotRepository>
+            <uniqueVersion>true</uniqueVersion>
+            <id>almgSnap</id>
+            <name>Repositório de snapshots da ALMG</name>
+            <url>http://compilador.almg.uucp:8081/nexus/content/repositories/snapshots</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>   
 </project>
