@@ -1,4 +1,7 @@
-/target
+.classpath
+.project
+.settings
+target/
 /.idea
 /out
 nb-configuration.xml

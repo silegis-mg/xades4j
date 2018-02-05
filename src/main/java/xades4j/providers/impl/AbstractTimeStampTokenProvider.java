@@ -68,7 +68,7 @@ public abstract class AbstractTimeStampTokenProvider implements TimeStampTokenPr
     }
 
     @Override
-    public final TimeStampTokenRes getTimeStampToken(byte[] tsDigestInput, String digestAlgUri) throws TimeStampTokenGenerationException {
+    public TimeStampTokenRes getTimeStampToken(byte[] tsDigestInput, String digestAlgUri) throws TimeStampTokenGenerationException {
         byte[] digest;
         try {
             MessageDigest md = messageDigestProvider.getEngine(digestAlgUri);

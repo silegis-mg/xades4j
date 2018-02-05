@@ -92,7 +92,7 @@ public class HttpTimeStampTokenProvider extends AbstractTimeStampTokenProvider {
         }
     }
 
-    private HttpURLConnection createHttpConnection() throws IOException {
+    protected HttpURLConnection createHttpConnection() throws IOException {
         HttpURLConnection connection = (HttpURLConnection) new URL(this.temporaryGetTSAUrl()).openConnection();
 
         if (this.base64TsaUsrAndPwd != null) {
