@@ -1,6 +1,7 @@
 .classpath
 .project
 .settings
+nbactions.xml
 target/
 /.idea
 /out
